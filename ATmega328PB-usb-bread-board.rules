@@ -1,0 +1,84 @@
+
+(rules PCB ATmega328PB-usb-bread-board
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 3645)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND /aref VCC /pb4 /pb3 /pb2 /pb1 /pb0
+    /pd7 /pd6 /pd5 /pd4 /pd3 /pd2 /pd1 /pd0
+    /pb6 /pe3 /pe2 /pe1 /pe0 /pc6 /pb7 /pc5
+    /pc4 /pc3 /pc2 /pc1 /pc0 /pb5 /avcc /DTR
+    "Net-(JP2-Pad1)" "/USB_UART_TX" "/USB_UART_RX" "Net-(R1-Pad2)" "Net-(D1-Pad1)" "Net-(U2-Pad27)" "Net-(U2-Pad24)" "Net-(U2-Pad23)"
+    "Net-(U2-Pad22)" "Net-(U2-Pad21)" "Net-(U2-Pad20)" "Net-(U2-Pad19)" "Net-(U2-Pad18)" "Net-(U2-Pad17)" "Net-(U2-Pad16)" "Net-(U2-Pad15)"
+    "Net-(U2-Pad14)" "Net-(U2-Pad13)" "Net-(U2-Pad12)" "Net-(U2-Pad11)" "Net-(U2-Pad10)" "Net-(U2-Pad9)" "Net-(D3-Pad1)" "Net-(D2-Pad1)"
+    "Net-(U2-Pad2)" "Net-(U2-Pad1)" "Net-(D4-Pad2)" "Net-(J3-Pad6)" "Net-(J3-Pad4)" "Net-(R3-Pad1)" "Net-(U3-Pad7)" "Net-(U3-Pad6)"
+    "Net-(U3-Pad5)" "Net-(JP5-Pad1)" "Net-(JP6-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

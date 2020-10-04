@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ATmega328PB-usb-bread-board-rescue)(type Legacy)(uri ${KIPRJMOD}/ATmega328PB-usb-bread-board-rescue.lib)(options "")(descr ""))
+  (lib (name my-kicad-symbols)(type Legacy)(uri ${KIPRJMOD}/my-kicad-symbols/my-kicad-symbols.lib)(options "")(descr ""))
+)
