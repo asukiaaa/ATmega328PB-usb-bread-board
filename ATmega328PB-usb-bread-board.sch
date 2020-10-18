@@ -74,9 +74,7 @@ Text Label 6150 2450 0    50   ~ 0
 pb4
 Text Label 6150 2550 0    50   ~ 0
 pb5
-Text Label 7150 2550 0    50   ~ 0
-pb6
-Text Label 7150 2850 0    50   ~ 0
+Text Label 6150 2750 0    50   ~ 0
 pb7
 Text Label 6150 2950 0    50   ~ 0
 pc0
@@ -254,8 +252,6 @@ Text Label 8750 3100 0    50   ~ 0
 pc2
 Text Label 8750 3600 0    50   ~ 0
 pb7
-Text Label 8750 3500 0    50   ~ 0
-pb6
 Wire Wire Line
 	8250 3200 8050 3200
 $Comp
@@ -548,28 +544,6 @@ NoConn ~ 3450 3550
 NoConn ~ 3450 3350
 NoConn ~ 3450 3250
 NoConn ~ 3450 3150
-$Comp
-L Device:Resonator Y1
-U 1 1 5F78A738
-P 6600 2700
-F 0 "Y1" V 6900 2700 50  0000 C CNN
-F 1 "Resonator" V 6850 2700 50  0000 C CNN
-F 2 "Crystal:Resonator_SMD_Murata_CSTxExxV-3Pin_3.0x1.1mm" H 6575 2700 50  0001 C CNN
-F 3 "~" H 6575 2700 50  0001 C CNN
-	1    6600 2700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5F796F09
-P 6800 2950
-F 0 "#PWR0111" H 6800 2700 50  0001 C CNN
-F 1 "GND" H 6805 2777 50  0000 C CNN
-F 2 "" H 6800 2950 50  0001 C CNN
-F 3 "" H 6800 2950 50  0001 C CNN
-	1    6800 2950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:AVR-ISP-6 J4
 U 1 1 5F7B24E1
@@ -866,46 +840,204 @@ Wire Wire Line
 Connection ~ 2950 1400
 Wire Wire Line
 	2950 1400 2850 1400
-Wire Wire Line
-	6800 2950 6800 2700
 $Comp
-L ATmega328PB-usb-bread-board-rescue:Jumper_NC_Small-Device JP5
-U 1 1 5F8E4AE0
-P 7050 2550
-F 0 "JP5" H 7050 2762 50  0000 C CNN
-F 1 "NC" H 7050 2671 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7050 2550 50  0001 C CNN
-F 3 "~" H 7050 2550 50  0001 C CNN
-	1    7050 2550
+L my-kicad-symbols:NJM12888F33 U?
+U 1 1 5F8C64C1
+P 9850 1800
+F 0 "U?" H 10000 2250 50  0000 C CNN
+F 1 "NJM12888F33" H 10150 2100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9850 1800 50  0001 C CNN
+F 3 "" H 9850 1800 50  0001 C CNN
+	1    9850 1800
 	1    0    0    -1  
 $EndComp
 $Comp
-L ATmega328PB-usb-bread-board-rescue:Jumper_NC_Small-Device JP6
-U 1 1 5F8E582D
-P 7050 2850
-F 0 "JP6" H 7050 3062 50  0000 C CNN
-F 1 "NC" H 7050 2971 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7050 2850 50  0001 C CNN
-F 3 "~" H 7050 2850 50  0001 C CNN
-	1    7050 2850
+L power:VCC #PWR?
+U 1 1 5F8C761A
+P 9200 1500
+F 0 "#PWR?" H 9200 1350 50  0001 C CNN
+F 1 "VCC" H 9215 1673 50  0000 C CNN
+F 2 "" H 9200 1500 50  0001 C CNN
+F 3 "" H 9200 1500 50  0001 C CNN
+	1    9200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8C7AD0
+P 9200 2200
+F 0 "#PWR?" H 9200 1950 50  0001 C CNN
+F 1 "GND" H 9205 2027 50  0000 C CNN
+F 2 "" H 9200 2200 50  0001 C CNN
+F 3 "" H 9200 2200 50  0001 C CNN
+	1    9200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F8C87B4
+P 9200 1800
+F 0 "C?" H 9250 1900 50  0000 L CNN
+F 1 "0.1uf" H 9250 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9238 1650 50  0001 C CNN
+F 3 "~" H 9200 1800 50  0001 C CNN
+	1    9200 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6950 2850 6600 2850
+	9200 1500 9450 1500
 Wire Wire Line
-	6350 2850 6350 2750
+	9450 1500 9450 1800
+Connection ~ 9450 1500
 Wire Wire Line
-	6350 2750 6150 2750
-Connection ~ 6600 2850
+	9450 1500 9850 1500
 Wire Wire Line
-	6600 2850 6350 2850
+	9200 1650 9200 1500
+Connection ~ 9200 1500
+$Comp
+L Device:C C?
+U 1 1 5F8D0B51
+P 10250 2050
+F 0 "C?" H 10300 2150 50  0000 L CNN
+F 1 "10nf" H 10300 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10288 1900 50  0001 C CNN
+F 3 "~" H 10250 2050 50  0001 C CNN
+	1    10250 2050
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6150 2650 6350 2650
+	9200 1950 9200 2200
 Wire Wire Line
-	6350 2650 6350 2550
+	9200 2200 9850 2200
+Connection ~ 9200 2200
 Wire Wire Line
-	6350 2550 6600 2550
-Connection ~ 6600 2550
+	9850 2200 9850 2100
+Connection ~ 9850 2200
 Wire Wire Line
-	6600 2550 6950 2550
+	9850 2200 10250 2200
+$Comp
+L Device:C C?
+U 1 1 5F8D5F68
+P 10600 1950
+F 0 "C?" H 10650 2050 50  0000 L CNN
+F 1 "4.7uf" H 10650 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10638 1800 50  0001 C CNN
+F 3 "~" H 10600 1950 50  0001 C CNN
+	1    10600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F8D6BD8
+P 10600 1700
+F 0 "#PWR?" H 10600 1550 50  0001 C CNN
+F 1 "+3V3" H 10615 1873 50  0000 C CNN
+F 2 "" H 10600 1700 50  0001 C CNN
+F 3 "" H 10600 1700 50  0001 C CNN
+	1    10600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 1700 10600 1800
+Wire Wire Line
+	10600 1700 10250 1700
+Connection ~ 10600 1700
+Wire Wire Line
+	10250 2200 10600 2200
+Wire Wire Line
+	10600 2200 10600 2100
+Connection ~ 10250 2200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F8DE3AD
+P 9000 3500
+F 0 "#PWR?" H 9000 3350 50  0001 C CNN
+F 1 "+3V3" H 9015 3673 50  0000 C CNN
+F 2 "" H 9000 3500 50  0001 C CNN
+F 3 "" H 9000 3500 50  0001 C CNN
+	1    9000 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3500 8750 3500
+$Comp
+L my-kicad-symbols:SiT2001B-MEMS-Clock-Generator U?
+U 1 1 5F8E3D90
+P 10000 3350
+F 0 "U?" H 9950 3950 50  0000 L CNN
+F 1 "SiT2001B-MEMS-Clock-Generator" H 9600 3850 50  0000 L CNN
+F 2 "" H 10000 3350 50  0001 C CNN
+F 3 "" H 10000 3350 50  0001 C CNN
+	1    10000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5F8E86D4
+P 9400 2950
+F 0 "#PWR?" H 9400 2800 50  0001 C CNN
+F 1 "VCC" H 9415 3123 50  0000 C CNN
+F 2 "" H 9400 2950 50  0001 C CNN
+F 3 "" H 9400 2950 50  0001 C CNN
+	1    9400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8E86DA
+P 9400 3750
+F 0 "#PWR?" H 9400 3500 50  0001 C CNN
+F 1 "GND" H 9405 3577 50  0000 C CNN
+F 2 "" H 9400 3750 50  0001 C CNN
+F 3 "" H 9400 3750 50  0001 C CNN
+	1    9400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F8E86E0
+P 9400 3250
+F 0 "C?" H 9450 3350 50  0000 L CNN
+F 1 "0.1uf" H 9450 3100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 3100 50  0001 C CNN
+F 3 "~" H 9400 3250 50  0001 C CNN
+	1    9400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3100 9400 2950
+Connection ~ 9400 2950
+Wire Wire Line
+	10000 3750 9400 3750
+Wire Wire Line
+	9400 3400 9400 3750
+Connection ~ 9400 3750
+Wire Wire Line
+	9400 2950 10000 2950
+$Comp
+L Device:C C?
+U 1 1 5F8F13DA
+P 10550 3400
+F 0 "C?" H 10600 3500 50  0000 L CNN
+F 1 "15pf" H 10600 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10588 3250 50  0001 C CNN
+F 3 "~" H 10550 3400 50  0001 C CNN
+	1    10550 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 3550 10550 3750
+Wire Wire Line
+	10550 3750 10000 3750
+Connection ~ 10000 3750
+Text Label 10800 3250 0    50   ~ 0
+16MHz
+Wire Wire Line
+	10800 3250 10550 3250
+Connection ~ 10550 3250
+Wire Wire Line
+	10550 3250 10400 3250
+Text Label 6150 2650 0    50   ~ 0
+16MHz
+NoConn ~ 9600 3350
 $EndSCHEMATC

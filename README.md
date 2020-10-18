@@ -5,8 +5,15 @@
 - [5V Zener diode](https://akizukidenshi.com/catalog/g/gI-07434/)
 - [16Mhz ceramic resonator](https://akizukidenshi.com/catalog/g/gP-14562/)
 - [Diode](https://akizukidenshi.com/catalog/g/gI-02073/)
+- [3V3 regulator](https://akizukidenshi.com/catalog/g/gI-10675/)
+- [0.47f 0402](https://akizukidenshi.com/catalog/g/gP-07504/)
+- [0.01f 0603](https://akizukidenshi.com/catalog/g/gP-13387/)
+- [MEMS 16MHz](https://akizukidenshi.com/catalog/g/gI-11094/)
+- [12pf 0402](https://akizukidenshi.com/catalog/g/gP-13312/)
 - [OP Amp LMV358IDGKR](https://www.digikey.jp/product-detail/ja/texas-instruments/LMV358IDGKR/296-13455-1-ND/486370)
 - [USB microB](https://www.digikey.jp/product-detail/ja/molex/1050170001/WM1399CT-ND/2350885)
+- Resistor 0603 22k, 47k and 2k
+- LED 0603
 
 ## License
 

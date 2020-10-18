@@ -364,39 +364,6 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Resonator
-#
-DEF Device_Resonator Y 0 40 Y N 1 F N
-F0 "Y" 0 225 50 H V C CNN
-F1 "Device_Resonator" 0 150 50 H V C CNN
-F2 "" -25 0 50 H I C CNN
-F3 "" -25 0 50 H I C CNN
-$FPLIST
- Filter*
- Resonator*
-$ENDFPLIST
-DRAW
-C -95 0 10 0 1 0 F
-C 0 -150 10 0 1 0 F
-C 95 0 10 0 1 0 F
-S -135 -125 -55 -135 0 1 0 F
-S -135 -95 -55 -105 0 1 0 F
-S -40 80 40 -80 0 1 12 N
-S 55 -125 135 -135 0 1 0 F
-S 55 -95 135 -105 0 1 0 F
-P 2 0 1 0 -95 -95 -95 0 N
-P 2 0 1 0 -75 0 -125 0 N
-P 2 0 1 20 -70 -50 -70 50 N
-P 2 0 1 20 70 -50 70 50 N
-P 2 0 1 0 75 0 100 0 N
-P 2 0 1 0 95 0 95 -100 N
-P 4 0 1 0 95 -130 95 -150 -95 -150 -95 -130 N
-X 1 1 -150 0 50 R 50 50 1 1 P
-X 2 2 0 -200 50 U 50 50 1 1 P
-X 3 3 150 0 50 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # my-kicad-symbols_Grove-I2C-connector
 #
 DEF my-kicad-symbols_Grove-I2C-connector J 0 40 Y Y 1 F N
@@ -410,6 +377,56 @@ X SCL 1 250 150 100 L 50 50 1 1 I
 X SDA 2 250 50 100 L 50 50 1 1 I
 X VCC 3 250 -50 100 L 50 50 1 1 W
 X GND 4 250 -150 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# my-kicad-symbols_NJM12888F33
+#
+DEF my-kicad-symbols_NJM12888F33 U 0 40 Y Y 1 F N
+F0 "U" 100 -250 50 H V C CNN
+F1 "my-kicad-symbols_NJM12888F33" 350 250 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 200 300 -200 0 1 10 f
+X VIN 1 0 300 100 D 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X CTL 3 -400 0 100 R 50 50 1 1 I
+X CS 4 400 -100 100 L 50 50 1 1 I
+X Vout 5 400 100 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# my-kicad-symbols_SiT2001B-MEMS-Clock-Generator
+#
+DEF my-kicad-symbols_SiT2001B-MEMS-Clock-Generator U 0 40 Y Y 1 F N
+F0 "U" 600 300 50 H V C CNN
+F1 "my-kicad-symbols_SiT2001B-MEMS-Clock-Generator" 750 400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 300 300 -300 0 1 10 f
+X GND 1 0 -400 100 U 50 50 1 1 W
+X NC 2 -400 -100 100 R 50 50 1 1 N
+X OE/~ST~/NC 3 -400 0 100 R 50 50 1 1 P
+X VDD 4 0 400 100 D 50 50 1 1 W
+X OUT 5 400 100 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# power_+3V3
+#
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
