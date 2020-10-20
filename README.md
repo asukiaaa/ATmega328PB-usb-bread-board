@@ -27,3 +27,4 @@ MIT
 - [A-Star 328PB Micro schematic](https://www.pololu.com/file/0J1463/a-star-328pb-micro-schematic.pdf)
 - [Grove system](https://wiki.seeedstudio.com/Grove_System/)
 - [CP210x 5V Tolerance](https://www.silabs.com/community/interface/knowledge-base.entry.html/2004/02/18/cp210x_5v_tolerance-J582)
+- [Devkitc v4 schema (PDF)](https://dl.espressif.com/dl/schematics/esp32_devkitc_v4-sch.pdf)
