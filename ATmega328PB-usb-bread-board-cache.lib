@@ -380,23 +380,6 @@ X GND 4 250 -150 100 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# my-kicad-symbols_NJM12888F33
-#
-DEF my-kicad-symbols_NJM12888F33 U 0 40 Y Y 1 F N
-F0 "U" 100 -250 50 H V C CNN
-F1 "my-kicad-symbols_NJM12888F33" 350 250 50 H V C CNN
-F2 "Package_TO_SOT_SMD:SOT-23-5" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -300 200 300 -200 0 1 10 f
-X VIN 1 0 300 100 D 50 50 1 1 W
-X GND 2 0 -300 100 U 50 50 1 1 W
-X CTL 3 -400 0 100 R 50 50 1 1 I
-X CS 4 400 -100 100 L 50 50 1 1 I
-X Vout 5 400 100 100 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
 # my-kicad-symbols_SiT2001B-MEMS-Clock-Generator
 #
 DEF my-kicad-symbols_SiT2001B-MEMS-Clock-Generator U 0 40 Y Y 1 F N
