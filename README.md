@@ -26,3 +26,4 @@ MIT
 - [MiniCore/avr/variants/pb-variant/pins_arduino.h](https://github.com/MCUdude/MiniCore/blob/master/avr/variants/pb-variant/pins_arduino.h)
 - [A-Star 328PB Micro schematic](https://www.pololu.com/file/0J1463/a-star-328pb-micro-schematic.pdf)
 - [Grove system](https://wiki.seeedstudio.com/Grove_System/)
+- [CP210x 5V Tolerance](https://www.silabs.com/community/interface/knowledge-base.entry.html/2004/02/18/cp210x_5v_tolerance-J582)
