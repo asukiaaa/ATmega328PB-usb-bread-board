@@ -125,8 +125,6 @@ F 3 "~" H 5150 1350 50  0001 C CNN
 	1    5150 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 1200 5550 1500
 $Comp
 L power:GND #PWR0104
 U 1 1 5EF066FF
@@ -138,26 +136,6 @@ F 3 "" H 5150 1500 50  0001 C CNN
 	1    5150 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L ATmega328PB-usb-bread-board-rescue:Jumper_NC_Small-Device JP1
-U 1 1 5EF1D9B3
-P 5650 1500
-F 0 "JP1" H 5650 1712 50  0000 C CNN
-F 1 "NC" H 5650 1621 50  0000 C CNN
-F 2 "my-kicad-footprints:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5650 1500 50  0001 C CNN
-F 3 "~" H 5650 1500 50  0001 C CNN
-	1    5650 1500
-	1    0    0    -1  
-$EndComp
-Connection ~ 5550 1500
-Wire Wire Line
-	5550 1500 5550 1750
-Wire Wire Line
-	5750 1500 5750 1650
-Wire Wire Line
-	5750 1650 5650 1650
-Wire Wire Line
-	5650 1650 5650 1750
 $Comp
 L power:GND #PWR0105
 U 1 1 5EF20D84
@@ -283,10 +261,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 5550 3250 
 	1    5550 3250
 	1    0    0    -1  
 $EndComp
-Text Label 8750 4300 0    50   ~ 0
-avcc
-Text Label 5750 1500 0    50   ~ 0
-avcc
 Wire Wire Line
 	5150 1200 5550 1200
 Connection ~ 5550 1200
@@ -999,10 +973,10 @@ Wire Wire Line
 	3700 1500 4050 1500
 Connection ~ 3700 1500
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0111
 U 1 1 5F9873FD
 P 4050 1500
-F 0 "#PWR?" H 4050 1350 50  0001 C CNN
+F 0 "#PWR0111" H 4050 1350 50  0001 C CNN
 F 1 "+3V3" H 4065 1673 50  0000 C CNN
 F 2 "" H 4050 1500 50  0001 C CNN
 F 3 "" H 4050 1500 50  0001 C CNN
@@ -1029,4 +1003,23 @@ Wire Wire Line
 Connection ~ 2850 1400
 Wire Wire Line
 	2850 1400 3350 1400
+Wire Wire Line
+	5550 1200 5550 1750
+Wire Wire Line
+	5650 1200 5550 1200
+Wire Wire Line
+	5650 1200 5650 1750
+$Comp
+L power:VCC #PWR?
+U 1 1 5F911877
+P 9000 4300
+F 0 "#PWR?" H 9000 4150 50  0001 C CNN
+F 1 "VCC" H 9015 4473 50  0000 C CNN
+F 2 "" H 9000 4300 50  0001 C CNN
+F 3 "" H 9000 4300 50  0001 C CNN
+	1    9000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 4300 8750 4300
 $EndSCHEMATC
