@@ -499,23 +499,6 @@ Text Label 6650 3550 0    50   ~ 0
 DTR
 Text Label 7950 2800 0    50   ~ 0
 DTR
-Text Label 3900 2450 0    50   ~ 0
-DTR
-$Comp
-L ATmega328PB-usb-bread-board-rescue:Jumper_NC_Small-Device JP2
-U 1 1 5F5F147B
-P 3700 2450
-F 0 "JP2" H 3800 2500 50  0000 C CNN
-F 1 "NC" H 3600 2500 50  0000 C CNN
-F 2 "my-kicad-footprints:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3700 2450 50  0001 C CNN
-F 3 "~" H 3700 2450 50  0001 C CNN
-	1    3700 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 2450 3450 2450
-Wire Wire Line
-	3800 2450 3900 2450
 NoConn ~ 1600 2650
 $Comp
 L power:GND #PWR0110
@@ -986,10 +969,10 @@ Wire Wire Line
 	2050 1400 2450 1400
 Connection ~ 2050 1400
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0129
 U 1 1 5F92FD3C
 P 4050 1500
-F 0 "#PWR?" H 4050 1350 50  0001 C CNN
+F 0 "#PWR0129" H 4050 1350 50  0001 C CNN
 F 1 "+3V3" H 4065 1673 50  0000 C CNN
 F 2 "" H 4050 1500 50  0001 C CNN
 F 3 "" H 4050 1500 50  0001 C CNN
@@ -1111,4 +1094,6 @@ Wire Wire Line
 Connection ~ 2850 1700
 Wire Wire Line
 	2850 1700 2950 1700
+Text Label 3450 2450 0    50   ~ 0
+DTR
 $EndSCHEMATC
