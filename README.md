@@ -12,6 +12,7 @@
 - [12pf 0402](https://akizukidenshi.com/catalog/g/gP-13312/)
 - [OP Amp LMV358IDGKR](https://www.digikey.jp/product-detail/ja/texas-instruments/LMV358IDGKR/296-13455-1-ND/486370)
 - [USB microB](https://www.digikey.jp/product-detail/ja/molex/1050170001/WM1399CT-ND/2350885)
+- CP2102N
 - Resistor 0603 22k, 47k and 2k
 - LED 0603
 
