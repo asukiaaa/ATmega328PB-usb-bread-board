@@ -15,6 +15,7 @@
 - CP2102N
 - Resistor 0603 22k, 47k and 2k
 - LED 0603
+- [TVS Diode array ESDR0502NMUTBG](https://www.digikey.jp/product-detail/ja/on-semiconductor/ESDR0502NMUTBG/ESDR0502NMUTBGOSCT-ND/3462275)
 
 ## License
 
