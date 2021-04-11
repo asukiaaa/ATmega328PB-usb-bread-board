@@ -544,9 +544,9 @@ F 3 "" H 3100 5600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 5600 2800 5600
-Text Label 2800 5500 0    50   ~ 0
-pe1
 Text Label 2800 5400 0    50   ~ 0
+pe1
+Text Label 2800 5500 0    50   ~ 0
 pe0
 NoConn ~ 3450 2550
 NoConn ~ 3450 2650
