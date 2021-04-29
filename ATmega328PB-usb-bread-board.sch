@@ -553,77 +553,8 @@ NoConn ~ 3450 2950
 NoConn ~ 3450 1950
 NoConn ~ 3450 2050
 NoConn ~ 3450 2350
-$Comp
-L Amplifier_Operational:LMV358 U3
-U 1 1 5F7FBC8F
-P 4400 6200
-F 0 "U3" H 4400 6567 50  0000 C CNN
-F 1 "LMV358" H 4400 6476 50  0000 C CNN
-F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 4400 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 4400 6200 50  0001 C CNN
-	1    4400 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LMV358 U3
-U 3 1 5F8010CF
-P 6150 6200
-F 0 "U3" H 6108 6246 50  0000 L CNN
-F 1 "LMV358" H 6108 6155 50  0000 L CNN
-F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 6150 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 6150 6200 50  0001 C CNN
-	3    6150 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LMV358 U3
-U 2 1 5F8029B5
-P 5450 6200
-F 0 "U3" H 5450 6567 50  0000 C CNN
-F 1 "LMV358" H 5450 6476 50  0000 C CNN
-F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 5450 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 5450 6200 50  0001 C CNN
-	2    5450 6200
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5750 6200
-NoConn ~ 5150 6100
-NoConn ~ 5150 6300
-$Comp
-L power:GND #PWR0120
-U 1 1 5F80F773
-P 6050 6500
-F 0 "#PWR0120" H 6050 6250 50  0001 C CNN
-F 1 "GND" H 6055 6327 50  0000 C CNN
-F 2 "" H 6050 6500 50  0001 C CNN
-F 3 "" H 6050 6500 50  0001 C CNN
-	1    6050 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0121
-U 1 1 5F80FD8C
-P 6050 5900
-F 0 "#PWR0121" H 6050 5750 50  0001 C CNN
-F 1 "VCC" H 6065 6073 50  0000 C CNN
-F 2 "" H 6050 5900 50  0001 C CNN
-F 3 "" H 6050 5900 50  0001 C CNN
-	1    6050 5900
-	1    0    0    -1  
-$EndComp
-Text Label 4100 6100 2    50   ~ 0
+Text Label 4700 6450 2    50   ~ 0
 pb5
-$Comp
-L Device:R R3
-U 1 1 5F81DA18
-P 4700 6600
-F 0 "R3" H 4770 6646 50  0000 L CNN
-F 1 "10k" H 4770 6555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 6600 50  0001 C CNN
-F 3 "~" H 4700 6600 50  0001 C CNN
-	1    4700 6600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:LED D4
 U 1 1 5F81E245
@@ -646,13 +577,6 @@ F 3 "" H 4700 7050 50  0001 C CNN
 	1    4700 7050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 6300 4100 6450
-Wire Wire Line
-	4100 6450 4700 6450
-Wire Wire Line
-	4700 6450 4700 6200
-Connection ~ 4700 6450
 $Comp
 L power:+3V3 #PWR0126
 U 1 1 5F8DE3AD
@@ -993,6 +917,17 @@ F 1 "VCC" H 6465 3423 50  0000 C CNN
 F 2 "" H 6450 3250 50  0001 C CNN
 F 3 "" H 6450 3250 50  0001 C CNN
 	1    6450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F81DA18
+P 4700 6600
+F 0 "R3" H 4770 6646 50  0000 L CNN
+F 1 "10k" H 4770 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 6600 50  0001 C CNN
+F 3 "~" H 4700 6600 50  0001 C CNN
+	1    4700 6600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
