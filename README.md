@@ -2,17 +2,14 @@
 
 ## Components
 
-- [5V Zener diode](https://akizukidenshi.com/catalog/g/gI-07434/)
-- [16Mhz ceramic resonator](https://akizukidenshi.com/catalog/g/gP-14562/)
-- [Diode](https://akizukidenshi.com/catalog/g/gI-02073/)
-- [3V3 regulator](https://akizukidenshi.com/catalog/g/gI-10675/)
-- [0.47f 0402](https://akizukidenshi.com/catalog/g/gP-07504/)
-- [0.01f 0603](https://akizukidenshi.com/catalog/g/gP-13387/)
+- [5V 2A Diode](https://akizukidenshi.com/catalog/g/gI-02073/)
+- [4.7f 0402](https://akizukidenshi.com/catalog/g/gP-07504/)
+- 0.1f 0402
+- 4.7uf 0402
 - [MEMS 16MHz](https://akizukidenshi.com/catalog/g/gI-11094/)
-- [12pf 0402](https://akizukidenshi.com/catalog/g/gP-13312/)
 - [USB microB](https://www.digikey.jp/product-detail/ja/molex/1050170001/WM1399CT-ND/2350885)
 - CP2102N
-- Resistor 0603 22k, 47k and 2k
+- Resistor 0603 47k, 22k, 10k and 1k
 - LED 0603
 - [TVS Diode array ESDR0502NMUTBG](https://www.digikey.jp/product-detail/ja/on-semiconductor/ESDR0502NMUTBG/ESDR0502NMUTBGOSCT-ND/3462275)
 
