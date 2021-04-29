@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 3933)
+    (start_pass_no 4477)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -69,8 +69,8 @@
     /pc1 /pc0 /pb5 /DTR "/USB_UART_TX" "/USB_UART_RX" "Net-(R1-Pad2)" "Net-(U2-Pad27)"
     "Net-(U2-Pad24)" "Net-(U2-Pad23)" "Net-(U2-Pad22)" "Net-(U2-Pad21)" "Net-(U2-Pad20)" "Net-(U2-Pad19)" "Net-(U2-Pad18)" "Net-(U2-Pad17)"
     "Net-(U2-Pad16)" "Net-(U2-Pad15)" "Net-(U2-Pad14)" "Net-(U2-Pad13)" "Net-(U2-Pad12)" "Net-(U2-Pad11)" "Net-(U2-Pad10)" "Net-(U2-Pad2)"
-    "Net-(U2-Pad1)" "Net-(D4-Pad2)" "Net-(J3-Pad6)" "Net-(J3-Pad4)" "Net-(R3-Pad1)" "Net-(U3-Pad7)" "Net-(U3-Pad6)" "Net-(U3-Pad5)"
-    /16MHz +3V3 "Net-(R4-Pad1)" "Net-(U5-Pad3)" "Net-(U5-Pad2)" "Net-(D1-Pad2)" "Net-(D1-Pad3)" "Net-(D1-Pad6)"
+    "Net-(U2-Pad1)" "Net-(D4-Pad2)" "Net-(J3-Pad6)" "Net-(J3-Pad4)" /16MHz +3V3 "Net-(R4-Pad1)" "Net-(U5-Pad3)"
+    "Net-(U5-Pad2)" "Net-(D1-Pad2)" "Net-(D1-Pad3)" "Net-(D1-Pad6)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
