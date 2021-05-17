@@ -1705,7 +1705,7 @@
   (gr_text ^:PWM (at 102.85 89.18) (layer F.SilkS) (tstamp 5F7A850B)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text Rev2021.05 (at 112.75 108.58) (layer F.SilkS)
+  (gr_text Rev2021.06 (at 112.75 108.58) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text ATmega328PB (at 135.5 106.13) (layer F.SilkS)
