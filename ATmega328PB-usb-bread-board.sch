@@ -602,17 +602,6 @@ F 3 "" H 10000 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0127
-U 1 1 5F8E86D4
-P 9400 2950
-F 0 "#PWR0127" H 9400 2800 50  0001 C CNN
-F 1 "VCC" H 9415 3123 50  0000 C CNN
-F 2 "" H 9400 2950 50  0001 C CNN
-F 3 "" H 9400 2950 50  0001 C CNN
-	1    9400 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0128
 U 1 1 5F8E86DA
 P 9400 3750
@@ -636,7 +625,6 @@ F 3 "~" H 9400 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9400 3100 9400 2950
-Connection ~ 9400 2950
 Wire Wire Line
 	10000 3750 9400 3750
 Wire Wire Line
@@ -930,4 +918,16 @@ F 3 "~" H 4700 6600 50  0001 C CNN
 	1    4700 6600
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60A1FEB1
+P 9400 2950
+F 0 "#PWR?" H 9400 2800 50  0001 C CNN
+F 1 "+3V3" H 9415 3123 50  0000 C CNN
+F 2 "" H 9400 2950 50  0001 C CNN
+F 3 "" H 9400 2950 50  0001 C CNN
+	1    9400 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 9400 2950
 $EndSCHEMATC
