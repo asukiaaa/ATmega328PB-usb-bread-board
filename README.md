@@ -12,6 +12,7 @@
 - Resistor 0603 47k, 22k, 10k and 1k
 - LED 0603
 - [TVS Diode array ESDR0502NMUTBG](https://www.digikey.jp/product-detail/ja/on-semiconductor/ESDR0502NMUTBG/ESDR0502NMUTBGOSCT-ND/3462275)
+- [Switch TVAF06](https://akizukidenshi.com/catalog/g/gP-14888/)
 
 ## License
 
