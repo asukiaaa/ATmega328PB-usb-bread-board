@@ -988,4 +988,28 @@ F 3 " ~" H 2750 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2500 6950
+Text Label 6550 5800 0    50   ~ 0
+pc6
+$Comp
+L power:GND #PWR0132
+U 1 1 60B73BE3
+P 6150 5800
+F 0 "#PWR0132" H 6150 5550 50  0001 C CNN
+F 1 "GND" H 6155 5627 50  0000 C CNN
+F 2 "" H 6150 5800 50  0001 C CNN
+F 3 "" H 6150 5800 50  0001 C CNN
+	1    6150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60B7FEFC
+P 6350 5800
+F 0 "SW1" H 6350 6085 50  0000 C CNN
+F 1 "SW_Push" H 6350 5994 50  0000 C CNN
+F 2 "my-kicad-footprints:SW_Push_TVAF06" H 6350 6000 50  0001 C CNN
+F 3 "~" H 6350 6000 50  0001 C CNN
+	1    6350 5800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
