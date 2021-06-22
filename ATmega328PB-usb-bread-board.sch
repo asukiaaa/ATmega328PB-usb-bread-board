@@ -180,29 +180,29 @@ F 3 "" H 8250 3200 50  0001 C CNN
 	1    8250 3200
 	1    0    0    -1  
 $EndComp
-Text Label 8750 2800 0    50   ~ 0
-pb5
 Text Label 7950 4400 0    50   ~ 0
-pb4
+pb5
 Text Label 7950 4300 0    50   ~ 0
-pb3
+pb4
 Text Label 7950 4200 0    50   ~ 0
-pb2
+pb3
 Text Label 7950 4100 0    50   ~ 0
-pb1
+pb2
 Text Label 7950 4000 0    50   ~ 0
-pb0
+pb1
 Text Label 7950 3900 0    50   ~ 0
-pd7
+pb0
 Text Label 7950 3800 0    50   ~ 0
-pd6
+pd7
 Text Label 7950 3700 0    50   ~ 0
-pd5
+pd6
 Text Label 7950 3600 0    50   ~ 0
-pd4
+pd5
 Text Label 7950 3500 0    50   ~ 0
-pd3
+pd4
 Text Label 7950 3400 0    50   ~ 0
+pd3
+Text Label 7950 3300 0    50   ~ 0
 pd2
 Text Label 8750 3000 0    50   ~ 0
 pc1
@@ -230,8 +230,6 @@ Text Label 8750 3100 0    50   ~ 0
 pc2
 Text Label 8750 3600 0    50   ~ 0
 pb7
-Wire Wire Line
-	8250 3200 8050 3200
 $Comp
 L power:VCC #PWR0108
 U 1 1 5EF389BE
@@ -243,13 +241,6 @@ F 3 "" H 8200 3100 50  0001 C CNN
 	1    8200 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8050 3200 8050 3300
-Wire Wire Line
-	8050 3300 7950 3300
-Connection ~ 8050 3200
-Wire Wire Line
-	8050 3200 7950 3200
 $Comp
 L ATmega328PB-usb-bread-board-rescue:ATmega328PB-MU-MCU_Microchip_ATmega U1
 U 1 1 5EF5772F
@@ -1012,4 +1003,19 @@ F 3 "~" H 6350 6000 50  0001 C CNN
 	1    6350 5800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7950 3200 8250 3200
+$Comp
+L power:GND #PWR?
+U 1 1 60D27B13
+P 9050 2800
+F 0 "#PWR?" H 9050 2550 50  0001 C CNN
+F 1 "GND" H 9055 2627 50  0000 C CNN
+F 2 "" H 9050 2800 50  0001 C CNN
+F 3 "" H 9050 2800 50  0001 C CNN
+	1    9050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2800 8750 2800
 $EndSCHEMATC
